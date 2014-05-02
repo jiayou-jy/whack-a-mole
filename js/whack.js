@@ -1,10 +1,6 @@
-// To Do:
-// Adjust game speed with progression
 $('document').ready(function(){
-
 	var game = {
-		// Select all .game_block store jQuery as game_block
-		game_block: $('.game_block'),
+		game_block: $('.game_block'), // Select all .game_block store jQuery as game_block
 		clicks: 0,
 		hits: 0,
 		score: 0,
@@ -37,10 +33,9 @@ $('document').ready(function(){
 		},
 		end_game: function () {
 			// Stop the images from cycling
-			// Stop the countdown from progressing
 			window.clearInterval(display);
+			// Stop the countdown from progressing
 			window.clearInterval(countdown);
-			
 			// Fade out all remaining images
 			$(game.game_block).children().fadeOut();
 			// Show start button
@@ -50,14 +45,13 @@ $('document').ready(function(){
 			game.clicks = 0;
 		},
 		start_timer: function() {
-
-			$('.btn-success').on('click', function (){ 
-			    countdown = setInterval(function() {
-			        var timer = $('#timer');
-			        current = parseInt(timer.html());
-			        timer.html(--current);
-			    }, 1000);
-			})
+			$('.btn-success').on('click', function (){
+				countdown = setInterval(function() {
+					var timer = $('#timer');
+					current = parseInt(timer.html());
+					timer.html(--current);
+				}, 1000);
+			});
 		}
 	};
 
