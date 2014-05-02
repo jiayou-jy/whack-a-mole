@@ -1,0 +1,94 @@
+<html>
+<head>
+	<!--Bootstrap CSS Below-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<!--Bootsrap CSS Above-->
+	<!-- FontAwesome Below -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- FontAwesome Above --> 
+	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+	<title>Whack a grump!?!</title>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/whack.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<h3 class="text-center">Whack a grump!?!</h3>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="row">
+				<table class="text-right">
+					<tr>
+						<td>Seconds Remaining:</td>
+						<td id="timer">30</td>
+					</tr>
+					<tr>
+						<td>Grumpoints:</td>
+						<td id="score">0</td>
+					</tr>
+					<tr>
+						<td>Total whacks:</td>
+						<td id="clicks">0</td>
+					</tr>
+					<tr>
+						<td>Level:</td>
+						<td id="level">1</td>
+					</tr>	
+					<tr>
+						<td>Top Grumpoints:</td>
+						<td id="highscore">0</td>
+					</tr>					
+				</table>
+			</div>
+		</div>
+		<div class='col-md-6 game_board'>
+			<div class="row">
+				<div class="game_block" id="1">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+				<div class="game_block" id="2">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+				<div class="game_block" id="3">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+			</div>
+			<div class="row">
+				<div class="game_block" id="4">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+				<div class="game_block" id="5">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+				<div class="game_block" id="6">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+			</div>
+			<div class="row">
+				<div class="game_block" id="7">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+				<div class="game_block" id="8">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+				<div class="game_block" id="9">
+					<img src="img/grumpy0.jpeg" alt="grumpyimage">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">			
+			<button type="button" class="btn btn-success btn-lg btn-block">Start</button>
+		</div>
+	</div>
+</div>
+<script src="js/whack.js"></script>
+</body>
+</html>
